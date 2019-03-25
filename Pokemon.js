@@ -1,6 +1,6 @@
-var Pokemon = /** @class */ (function () {
-    function Pokemon(nom) {
+class Pokemon {
+
+    constructor(nom) {
         var nom;
     }
-    return Pokemon;
-}());
+}
