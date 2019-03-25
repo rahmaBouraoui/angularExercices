@@ -1,6 +1,7 @@
-class Pokemon {
-
-    constructor(nom) {
-        var nom;
+var Pokemon = /** @class */ (function () {
+    function Pokemon(nom) {
+        this.nom = nom;
+        console.log(this.nom);
     }
-}
+    return Pokemon;
+}());
