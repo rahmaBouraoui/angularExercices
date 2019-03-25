@@ -1,0 +1,14 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "cours angular Exercices : pokemon",
+  "main": "Pokemon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildAndRun": "tsc ./Pokemon.ts & node ./Pokemon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahmaBouraoui/angularExercices.git"
+  }
+}
