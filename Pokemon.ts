@@ -1,7 +1,8 @@
 class Pokemon {
 
-    
+    pointVie: number = 100;
     attackSpeed: number;
+    attack: number = 15;
     nom: string;
     constructor(nom: string, attackSpeed: number) {
         this.nom = nom;
@@ -26,3 +27,18 @@ class Pokemon {
         }
     }
 }
+    function gererAttackPokemon(pokemon1: Pokemon, pokemon2: Pokemon) {
+    
+        if(this.pokemonAttack(pokemon1, pokemon2)) {
+            if(pokemon1.pointVie < 0 && pokemon2.pointVie > 0) {
+                pokemon1.pointVie - pokemon2.attack; 
+                console.log(pokemon2.pointVie);
+                return pokemon2;
+            }
+            else {
+                pokemon2.pointVie - pokemon1.attack; 
+                console.log(pokemon2.pointVie);
+                return pokemon1;
+            }
+        }
+    }
