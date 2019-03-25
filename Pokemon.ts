@@ -1,6 +1,7 @@
 class Pokemon {
 
-    constructor(nom) {
-        var nom;
+    nom: string;
+    constructor(nom: string) {
+        this.nom = nom;
     }
 }
