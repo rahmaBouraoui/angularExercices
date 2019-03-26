@@ -30,10 +30,20 @@ class Pokemon {
     function gererAttackPokemon(pokemon1: Pokemon, pokemon2: Pokemon) {
     
         if(this.pokemonAttack(pokemon1, pokemon2)) {
-            if(pokemon1.pointVie < 0 && pokemon2.pointVie > 0) {
+            if(pokemon1.attackSpeed < pokemon2.attackSpeed) {
                 pokemon1.pointVie - pokemon2.attack; 
                 console.log(pokemon2.pointVie);
                 return pokemon2;
+
+                //si les points de vie d'un pokémon est inférieur à 0, alors le combat est fini.
+                if(pokemon1.pointVie <= 0 && pokemon2.pointVie > 0) {
+                    pokemon1.pointVie = 0;
+                    return pokemon2;
+                }
+                else {
+                    pokemon2.pointVie;
+                    return pokemon1;
+                }
             }
             else {
                 pokemon2.pointVie - pokemon1.attack; 
